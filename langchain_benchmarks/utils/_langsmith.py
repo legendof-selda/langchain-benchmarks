@@ -195,7 +195,7 @@ def run_without_langsmith(
     evaluation: Optional[RunEvalConfig] = None,
     concurrency_level: int = 5,
     verbose: bool = True,
-) -> None:
+) -> eval_runner_utils.TestResult:
     """Run a public dataset without langsmith."""
     from langchain.smith.evaluation.runner_utils import (
         _setup_evaluation,
